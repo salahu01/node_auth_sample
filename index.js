@@ -6,12 +6,12 @@ const connectDb = require("./db/mongodb");
 
 app.use(express.json());
 app.get('/',(req,res)=>{
-res.send('worked');
-})
+  res.status(200).send("Server Runnig Successfully");
+});
 
 app.use("/auth", authRoutes);
 
-app.all("/*", (req, res) => {
+app.all("*", (req, res) => {
   res.status(404).send("Page Not Found");
 });
 
