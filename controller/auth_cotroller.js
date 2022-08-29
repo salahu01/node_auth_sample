@@ -18,7 +18,7 @@ exports.signUp = async (req, res) => {
     const data = { ...req.body, password };
     const userData = await usera_model.create(data);
     const token = await jwt.sign({ user }, "fake-jwt-secret");
-    res.send({
+    res.status(201).json({
       name: userData.name,
       email: userData.email,
       id: userData.id,
@@ -37,7 +37,7 @@ exports.logIn = async (req, res) => {
     }
     const user = await usera_model.findOne({ email: req.body.email });
     if (!user) {
-      res.status(200).json({ error: "User not found" });
+      res.status(204).json({ error: "User not found" });
       return;
     }
 
@@ -48,7 +48,7 @@ exports.logIn = async (req, res) => {
 
     const token = await jwt.sign({ user }, "fake-jwt-secret");
 
-    res.send({
+    res.status(201).json({
       name: user.name,
       email: user.email,
       id: user.id,
