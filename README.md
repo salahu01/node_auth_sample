@@ -1,6 +1,6 @@
-# Project Title
+# Auth Sample
 
-A nice project with a nice description
+A nice project for front-end developers for learning authentication (focused for flutter developers).
 
 ---
 ## Requirements
