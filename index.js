@@ -5,6 +5,9 @@ const authRoutes = require("./routes/auth");
 const connectDb = require("./db/mongodb");
 
 app.use(express.json());
+app.get('/',(req,res)=>{
+res.send('worked');
+})
 
 app.use("/auth", authRoutes);
 
