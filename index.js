@@ -4,10 +4,11 @@ const currentPort = 4000 || process.env.port;
 const authRoutes = require("./routes/auth");
 const connectDb = require("./db/mongodb");
 
-app.use(express.json());
-app.get('/',(req,res)=>{
+app.get("/",(req,res)=>{
   res.status(200).send("Server Runnig Successfully");
 });
+
+app.use(express.json());
 
 app.use("/auth", authRoutes);
 
