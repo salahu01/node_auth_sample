@@ -59,4 +59,3 @@ exports.logIn = async (req, res) => {
     res.status(404).json({ error: error});
   }
 };
-
