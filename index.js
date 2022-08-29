@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const currentPort = 4000 || process.env.port;
+const currentPort = process.env.PORT || 4000;
 const authRoutes = require("./routes/auth");
 const connectDb = require("./db/mongodb");
 
