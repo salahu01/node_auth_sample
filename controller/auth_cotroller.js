@@ -54,7 +54,7 @@ exports.logIn = async (req, res) => {
 
     res.status(201).json({
       error: "",
-      status: false,
+      status: true,
       results: {
         name: user.name,
         email: user.email,
