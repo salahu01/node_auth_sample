@@ -1,12 +1,12 @@
 {
   "name": "node_lear",
   "version": "1.0.0",
-  "description": "",
+  "description": "A nice project for front-end developers for learning authentication (focused for flutter developers).",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "]",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.19"
@@ -17,5 +17,13 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.8.1",
     "mongoose": "^6.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salahu01/node_auth_sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salahu01/node_auth_sample/issues"
+  },
+  "homepage": "https://github.com/salahu01/node_auth_sample#readme"
 }
